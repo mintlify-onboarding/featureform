@@ -1,0 +1,119 @@
+{
+    "name": "Featureform",
+    "logo": {
+      "light": "/logo.svg",
+      "dark": "/logo.svg"
+    },
+    "favicon": "/favicon.svg",
+    "colors": {
+      "primary": "#F7195C",
+      "light": "#FF487F",
+      "dark": "#F7195C"
+    },
+    "topbarCtaButton": {
+      "name": "Quickstart",
+      "url": "https://docs.featureform.com/"
+    },
+    "topbarLinks": [
+      {
+        "name": "Schedule a Demo",
+        "url": "https://calendly.com/d/y5h-jpf-gj7/featureform-intro-call-intro-call"
+      }
+    ],
+    "anchors": [
+      {
+        "name": "Community",
+        "icon": "slack",
+        "url": "https://join.slack.com/t/featureform-community/shared_invite/zt-xhqp2m4i-JOCaN1vRN2NDXSVif10aQg"
+      },
+      {
+        "name": "Github",
+        "icon": "github",
+        "url": "https://github.com/featureform"
+      }
+    ],
+    "tabs": [
+        {
+            "name": "Python SDK",
+            "url": "https://sdk.featureform.com/"
+        }
+    ],
+    "navigation": [
+        {
+            "group": "Getting Started with Featureform",
+            "pages": [
+              "introduction",
+              "quickstart-local",
+              "quickstart-docker",
+              "minikube"
+            ]
+        },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/overview",
+              "getting-started/registering-infrastructure-providers",
+              "getting-started/transforming-data",
+              "getting-started/defining-features-labels-and-training-sets",
+              "getting-started/metadata-tags",
+              "getting-started/scheduling-resources",
+              "getting-started/serving-for-inference-and-training",
+              "getting-started/interact-with-the-cli",
+              "getting-started/exploring-the-feature-registry"
+            ]
+          },
+          {
+            "group": "LLMs, Embeddings, and Vector Databases",
+            "pages": [
+              "llms-embeddings-and-vector-databases/llm-workflow-with-featureform",
+              "llms-embeddings-and-vector-databases/building-a-chatbot-with-openai-and-a-vector-database"
+            ]
+          },
+          {
+            "group": "Training/Offline Stores",
+            "pages": [
+              "training-offline-stores/bigquery",
+              "training-offline-stores/postgres",
+              "training-offline-stores/redshift",
+              "training-offline-stores/snowflake",
+              "training-offline-stores/spark",
+              "training-offline-stores/spark_databricks",
+              "training-offline-stores/spark_emr",
+              "training-offline-stores/kubernetes"
+            ]
+          },
+          {
+            "group": "Inference/Online Stores",
+            "pages": [
+              "inference-online-stores/cassandra",
+              "inference-online-stores/dynamodb",
+              "inference-online-stores/firestore",
+              "inference-online-stores/mongodb",
+              "inference-online-stores/redis",
+              "inference-online-stores/azure"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/local-mode",
+              "deployment/kubernetes",
+              "deployment/quickstart-aws",
+              "deployment/quickstart-azure",
+              "deployment/quickstart-gcp",
+              "deployment/backup-and-restore"
+            ]
+          },
+          {
+            "group": "s",
+            "pages": [
+              "system-architecture"
+            ]
+          }
+    ],
+    "footerSocials":
+      {
+          "twitter": "https://twitter.com/FeatureformML",
+          "linkedin": "https://www.linkedin.com/company/featureform-ml"
+      }
+  }
