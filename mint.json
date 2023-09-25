@@ -40,28 +40,70 @@
     ],
     "navigation": [
         {
-            "group": "Getting Started with Featureform",
+            "group": "Overview",
             "pages": [
               "introduction",
-              "quickstart-local",
-              "quickstart-docker",
-              "minikube"
+              "deployment/quickstart",
+              {
+                "group": "Concepts",
+                "pages": [
+                  "concepts/immutability-lineage-and-dags",
+                  "concepts/versioning-and-variants",
+                  "concepts/tags-and-properties",
+                  "concepts/streaming",
+                  "concepts/dataframes",
+                  "concepts/dataframe-sql-transformation",
+                  "concepts/rag-vector-db-llms",
+                  "concepts/on-demand-features-request-time",
+                  "concepts/search-and-discovery-features",
+                  "concepts/point-in-time-correctness-historical-features-timeseries-data",
+                  "concepts/governance-and-access-control",
+                  "concepts/enterprise-vs-open-source-feature-store"
+                ]
+            }
             ]
         },
-          {
-            "group": "Getting Started",
-            "pages": [
-              "getting-started/overview",
-              "getting-started/registering-infrastructure-providers",
-              "getting-started/transforming-data",
-              "getting-started/defining-features-labels-and-training-sets",
-              "getting-started/metadata-tags",
-              "getting-started/scheduling-resources",
-              "getting-started/serving-for-inference-and-training",
-              "getting-started/interact-with-the-cli",
-              "getting-started/exploring-the-feature-registry"
-            ]
-          },
+        {
+          "group": "Using Featureform",
+          "pages": [
+            "getting-started/featureform-workflow",
+            "getting-started/architecture-and-components",
+            "getting-started/connecting-your-data-infrastructure",
+            {
+              "group": "Register, Transform, and Interact with Data Sets",
+              "pages": [
+                "getting-started/registering-transforming-and-interacting-with-data-sets",
+                "getting-started/scheduling-resources",
+                "getting-started/streaming-features",
+                "getting-started/on-demand-features-request-time"
+              ]
+            },
+            {
+              "group": "Register and Serve Features and Training Sets",
+              "pages": [
+                "getting-started/register-and-serve-features-training-sets",
+                "getting-started/model-to-feature-lineage",
+                "getting-started/on-demand-features-request-time",
+                "getting-started/streaming-features"
+              ]
+            },
+            "getting-started/search-monitor-discovery-feature-registry-ui-cli"
+          ]
+        },
+        {
+          "group": "Featureform Resource Types",
+          "pages": [
+           "abstractions/abstractions",
+           "abstractions/data-infrastructure-providers",
+           "abstractions/primary-data-sets",
+           "abstractions/transforming-data-sets",
+           "abstractions/entity",
+           "abstractions/feature",
+           "abstractions/embedding",
+           "abstractions/label",
+           "abstractions/training-set"
+          ]
+        },
           {
             "group": "LLMs, Embeddings, and Vector Databases",
             "pages": [

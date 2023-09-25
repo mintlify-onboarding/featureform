@@ -8,14 +8,14 @@ Featureform is a **virtual feature store**. It enables data scientists to **defi
 
 By using Featureform, a data science team can solve the organizational problems:
 
+<Card title="Facilitate Deployment" icon="upload" iconType="duotone">
+  Once a feature is ready to be deployed, Featureform will orchestrate your data infrastructure to make it ready in production. Using the Featureform API, you won't have to worry about the idiosyncrasies of your heterogeneous infrastructure (beyond their transformation language).
+</Card>
 <Card title="Enhance Collaboration" icon="people" iconType="duotone">
   Featureform ensures that transformations, features, labels, and training sets are defined in a standardized form, so they can easily be shared, re-used, and understood across the team.
 </Card>
 <Card title="Organize Experimentation" icon="flask" iconType="duotone">
   The days of untitled\_128.ipynb are over. Transformations, features, and training sets can be pushed from notebooks to a centralized feature repository with metadata like name, variant, lineage, and owner.
-</Card>
-<Card title="Facilitate Deployment" icon="upload" iconType="duotone">
-  Once a feature is ready to be deployed, Featureform will orchestrate your data infrastructure to make it ready in production. Using the Featureform API, you won't have to worry about the idiosyncrasies of your heterogeneous infrastructure (beyond their transformation language).
 </Card>
 <Card title="Increase Reliability" icon="signal-strong" iconType="duotone">
     Featureform enforces that all features, labels, and training sets are immutable. This allows them to safely be re-used among data scientists without worrying about logic changing. Furthermore, Featureform's orchestrator will handle retry logic and attempt to resolve other common distributed system problems automatically. Finally, Featureform will monitor and notify you of infrastructure problems and data drift.
@@ -41,11 +41,3 @@ By using Featureform, a data science team can solve the organizational problems:
 **Native embeddings support** Featureform was built from the ground up with embeddings in mind. It supports vector databases as both inference and training stores. Transformer models can be used as transformations, so that embedding tables can be versioned and reliably regenerated. We even created and open-sourced a popular vector database, [Emeddinghub](https://github.com/featureform/featureform/tree/main/embeddinghub).
 
 **Open-source** [Featureform](https://github.com/featureform/featureform) is free to use under the MPL 2.0 license.
-
-## The Featureform Abstraction
-
-<Frame caption="The components that make up a feature">
-  <img src="/images/Chain-1.svg" />
-</Frame>
-
-In reality, the feature’s definition is split across different pieces of infrastructure: the data source, the transformations, the inference store, the training store, and all their underlying data infrastructure. However, a data scientist will think of a feature in its logical form, something like: “a user’s average purchase price”. Featureform allows data scientists to define features in their logical form through transformation, providers, label, and training set resources. Featureform will then orchestrate the actual underlying components to achieve the data scientists' desired state.
