@@ -112,44 +112,73 @@
             ]
           },
           {
-            "group": "Training/Offline Stores",
+            "group": "Common Use Cases and Examples",
             "pages": [
-              "training-offline-stores/bigquery",
-              "training-offline-stores/postgres",
-              "training-offline-stores/redshift",
-              "training-offline-stores/snowflake",
-              "training-offline-stores/spark",
-              "training-offline-stores/spark_databricks",
-              "training-offline-stores/spark_emr",
-              "training-offline-stores/kubernetes"
+              "use-cases/fraud-detection",
+              "use-cases/llm-chatbot-rag"
             ]
           },
           {
-            "group": "Inference/Online Stores",
+            "group": "Supported Infastructure Providers",
             "pages": [
-              "inference-online-stores/cassandra",
-              "inference-online-stores/dynamodb",
-              "inference-online-stores/firestore",
-              "inference-online-stores/mongodb",
-              "inference-online-stores/redis",
-              "inference-online-stores/azure"
+              "providers/overview",
+              {
+                "group": "Offline Stores",
+                "pages": [
+                  "providers/offline-store",
+                  "providers/snowflake",
+                  "providers/spark",
+                  "providers/spark_databricks",
+                  "providers/spark_emr",
+                  "providers/kubernetes",
+                  "providers/bigquery",
+                  "providers/postgres",
+                  "providers/redshift"
+                ]
+              },
+              {
+                "group": "Object and File Stores",
+                "pages": [
+                  "providers/object-and-file-stores",
+                  "providers/aws-s3",
+                  "providers/azure-blob-store",
+                  "providers/google-cloud-gcs",
+                  "providers/hdfs"
+                ]
+              },
+              {
+                "group": "Inference Stores",
+                "pages": [
+                  "inference-online-stores/cassandra",
+                  "inference-online-stores/dynamodb",
+                  "inference-online-stores/firestore",
+                  "inference-online-stores/mongodb",
+                  "inference-online-stores/redis"
+                ]
+              },
+              {
+                "group": "Vector Databases",
+                "pages": [
+                  "providers/vector-db",
+                  "providers/redis",
+                  "providers/pinecone",
+                  "providers/weaviate"
+                ]
+              },
+              "providers/custom-providers"
             ]
           },
           {
             "group": "Deployment",
             "pages": [
               "deployment/local-mode",
+              "deployment/quickstart-docker",
               "deployment/kubernetes",
               "deployment/quickstart-aws",
               "deployment/quickstart-azure",
               "deployment/quickstart-gcp",
+              "system-architecture",
               "deployment/backup-and-restore"
-            ]
-          },
-          {
-            "group": "s",
-            "pages": [
-              "system-architecture"
             ]
           }
     ],
